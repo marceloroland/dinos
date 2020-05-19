@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4300000
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Big Forest Ponderosa Pine _LOD4
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 16
+    localAABB:
+      m_Center: {x: 0, y: 17.493155, z: 0}
+      m_Extent: {x: 6.1197395, y: 17.493155, z: 6.119739}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020003000000040005000600060007000400080009000a000a000b0008000c000d000e000e000f000c00
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 16
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 512
+    _typelessdata: e8d4c340000000003d9d0fb5d7cea33c00000000e6f27f3f6fc7ac3e00000000e8d4c340fbf10b423d9d0fb5d7cea33c00000000e6f27f3f6fc7ac3e0000003fe8d4c3c0fbf10b423d9d0f3579cea3bc00000000e6f27f3f2271263e0000003fe8d4c3c0000000803d9d0f3579cea3bc00000000e6f27f3f2271263e00000000e8d4c3b400000000e7d4c3c0e6f27f3f00000000c8cea3bcb863563f00000000e8d4c3b4fbf10b42e7d4c3c0e6f27f3f00000000c8cea3bcb863563f0000003fe8d4c334fbf10b42e7d4c340e6f27f3f0000000088cea33c489c293f0000003fe8d4c33400000080e7d4c340e6f27f3f0000000088cea33c489c293f00000000e8d4c3c0000000003d9d8f3505cfa3bc00000000e6f27fbf6fc7ac3e0000003fe8d4c3c0fbf10b423d9d8f3505cfa3bc00000000e6f27fbf6fc7ac3e0000803fe8d4c340fbf10b423d9d8fb549cea33c00000000e6f27fbf2271263e0000803fe8d4c340000000803d9d8fb549cea33c00000000e6f27fbf2271263e0000003faedf92b500000000e7d4c340e6f27fbf0000000048cea33cb863563f0000003faedf92b5fbf10b42e7d4c340e6f27fbf0000000048cea33cb863563f0000803faedf9235fbf10b42e7d4c3c0e5f27fbf0000000008cfa3bc489c293f0000803faedf923500000080e7d4c3c0e5f27fbf0000000008cfa3bc489c293f0000003f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 17.493155, z: 0}
+    m_Extent: {x: 6.1197395, y: 17.493155, z: 6.119739}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 0
