@@ -1,0 +1,177 @@
+﻿//////// MACHIN3 /////////
+--------------------------
+/// https://machin3.io ///
+/// support@machin3.io ///
+--------------------------
+
+Thanks for your purchase!
+
+Please see this Unity Community thread for an illustrated and up-to-date overview:
+https://forum.unity3d.com/threads/the-starfighter.458205/
+
+/// ATTENTION! pre-5.4.0 users
+
+If you import the package and Unity mentions:
+"A material is using the texture as a normal map. The texture must be marked as a normal map in the import settings."
+You have the option to ignore or to fix this now.
+
+You should ignore, if you intend to use the procedural substance materials.
+You should fix now, if you intend to use the static standard materials.
+
+/// Introduction ////////////////////////////////////////////////////////////// 
+
+The Starfighter is a single-seat, multirole fighter, that excels at interception and escort missions. 
+Advanced scouting and surveillance missions are possible, once outfitted with a probe in the designated socket in the fuselage.
+
+Capable of space and atmospheric flight, combined with vertical take off and landing abilities on most terrain, makes the Starfighter an extremely versatile light-weight and high performance craft.
+
+Both wings can be mounted with universal pylons and carry a variety of offensive and defensive weapons or equipment. (NOT supplied with this asset!)
+Due to its folding wing configuration the Starfighter is suitable for carrier based operation with limited deck space.
+
+The SF's cockpit doubles as an escape pod and life boat. In case of emergency, it detaches completely and will be ejected from the rest of the ship. 
+The escape pod features a number of survival equipment, including independent oxygen supply for up to 24hours or 96hours in suspended animation. 
+Being maneuverable on its own, the pod can be piloted using the same interface used for the Starfighter.
+
+---
+
+This asset is quite detailed and created with an eye towards current and next-generation needs in the gaming, VR and real-time film spaces.
+
+
+
+/// Contents //////////////////////////////////////////////////////////////////
+
+This package contains 'The Starfighter' asset v1.0. 
+BONUS: It also includes 'Blueprint / Schematic - Skybox 01 - 03 Twilight'
+
+
+The following demo scene files are supplied:
+  starfighter.unity - in scene view go fullscreen and hit play to see a demo of most animations in a sequence
+  starfighter_decals.unity - custom graphics using DeferredDecals, please see the Unity documentation for details on this
+  starfighter_materials.unity - procedural(substance) material/paintjob variations (slow to load, but flexible)
+  starfighter_materials_statics.unity - static(standard shader) materials/paintjobs (fast to load, but less flexible)
+  starfighter_parts.unity - breakdown of most components and their assembly
+
+/// PARTS
+
+While not specifically advertised as a modular asset, the Starfighter is built from and provided as 10 basic parts:
+  * main
+    - main interior(includes front-, back-, cockpit- and probe socket interiors) 
+    - main landing gear
+  * front
+    - front interior(includes front landing gear)
+  * back(engines)
+    - back interior
+  * wings
+    - interior
+  * escape pod(hierarchically, the main_cockpit mesh is part of the escape_pod, so both can be moved together)
+
+
+Note, that for this asset many of the actual meshes have been kept separate, the above list entries, henceforth called "parts", represent the hierarchical structure and simplify managing the objects.
+
+Each of these 10 parts has its own texture-set and material.
+
+Having the asset structured like this, allows you to not render parts you don't need. This saves texture memory and avoids rendering unnecessary polygons.
+For instance, you likely won't need the interior parts in normal flight mode, but you will need some if you fold out the landing gears. Or alternatively, in a hangar-like scenario, you might choose to show the Starfighter in various states of disassembly - without the wings for instance.
+
+In short, it's giving you the flexibility to get more out of the asset.
+
+For us it means, we can maintain a high quality across the asset and opens up the possibility of future extension. 
+
+In case you would be interested in extensions to this asset of any kind, we welcome your input and suggestions either via email at support@machin3.io.
+
+There's prefabs for The Starfighter in different assembly variations(with substance materials applied).
+
+/// ANIMATIONS
+
+The Starfighter comes with a variety of animation clips, most importantly the landing gear fold, landing gear dampening and wing folds. Furthermore, there are animations for wing flaps and fins, for escape pod elevators and rudder and finally for the escape pod release and probe release mechanisms.
+
+An animation controller sets up the animations and transitions using multiple layers. In cases where it applies, animations can be played as a unit or individually. For instance, the landing gear animation is masked accordingly, so you can only lower the front gear, or only the main left gear, etc instead of all of them at the same time.
+
+/// MATERIALS
+
+All materials are utilizing PBR.
+
+Materials for The Starfighter are provided in form of substance .sbsar files, which contain procedural materials allowing for significant customization. 
+Default materials, set up using Unity's standard shader are also supplied.
+
+
+
+/// CUSTOMIZATION ////////////////////////////////////////////////////////////
+
+  * 2 main, plain material choices - painted metal and plastics
+  * a mix of both, where the plastic parts act as accents to the painted metal parts
+  * a 4th camouflage material
+  * control emissive amount and color
+  * control cockpit color
+  * parametric dirt, with controlls for dirt level, conrast and grounge amount
+  * deferred decals the for placement of custom graphics
+
+
+/// Statistics ///////////////////////////////////////////////////////////////
+
+The Starfighter is ~30m in lenth, slightly larger than modern fighter planes.
+
+302 Objects
+
+Polygons/Triangles
+  * 66K tris in total
+  * 21K just outside parts
+  * 3.5K just escape pod
+Textures sets, resolutions
+  * 2048x2048 main, main_interior, main_interior_gears, front, front_interior, back, back_interior, wings, escape_pod
+  * 1024x1024 wings_interior
+Textures - all provided in .png format
+  * AlbedoTransparency
+  * MetallicSmoothness
+  * Normal
+  * Fluting (Normal)
+  * Emissive
+  * AO
+  * Curvature
+  * substance specific masks
+Materials
+  * Substance .sbsar (procedural) - for all outside parts
+  * default materials (static) - for all outside and interior parts
+Animations
+  * 12 base clips
+  * 30 clips, if masked out clip separations are included
+  * 72 clips, if reversed clips and masked out clip separations are included
+  * unity animated escape pod ejection for demo purposes
+
+
+
+/// Troubleshooting //////////////////////////////////////////////////////////
+
+If the normal maps from either substance materials or static materials look wrong, try setting the texture type accordingly. "Texture" for normal maps used by substance materials and "Normal" for normal maps used by static materials.
+The interior parts don't use subtance materials, so the interior normal maps should always be set to "Normal".
+
+Based on our tests, this is no longer necessary since 5.4.0 however. Substance materials will properly work with normal maps set to "Normal" texture type and so, we've decided to make this the default for the package.
+
+If you want to manually apply a material to a group of objects, we've found the Assignmaterial.cs editor script by athanazio very useful:
+https://forum.unity3d.com/threads/assign-a-material-to-multiple-object.35445/#post-565495
+
+
+
+/// Requirements /////////////////////////////////////////////////////////////
+
+Unity 5.3 is the "substance parity" release, meaning it's visually consistent with what artists create in Allegorithmic's Substance products. The Starfighter will work in earlier versions of Unity too, but we'd advice you to use a GGX shader nonetheless to achieve the highest visual quality.
+
+
+
+/// The Probe ////////////////////////////////////////////////////////////////
+
+The Starfighter has a socket on the underside for a previous of our assets, called The Probe (https://www.assetstore.unity3d.com/en/#!/content/69585)
+
+Both assets can be used together. Note that the Starfighter is scaled at 0.5 in the import settings of the fbx, to gain a length of about 30m(units) in Unity.
+For the Probe to fit, it needs to be similarly scaled(perhaps even 0.49), which it is not in the version 1.0. An update will be issued to achieve parity in scale.
+Furthermore, the Probe needs to be rotated 85 degrees, around the x axis, to fit properly with the front facing down.
+
+When the Probe is in its socket, the main_probe_socket_cover mesh of the main_interior part should be deactivated.
+
+Before moving the probe out of the socket, the probe_release animation should be played.
+
+
+
+/// Gratitude ////////////////////////////////////////////////////////////////
+
+Thanks for your support! We hope you enjoy this asset as much as we enjoyed making it. Good luck with all your projects!
